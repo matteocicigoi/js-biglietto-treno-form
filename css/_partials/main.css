@@ -1,0 +1,12 @@
+body{
+    background-color: #212226;
+}
+/* main */
+h1{
+    text-align: center;
+}
+#nome-cognome::placeholder,
+#km::placeholder {
+    color: white;
+    opacity: 0.8;
+}
