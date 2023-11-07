@@ -7,7 +7,7 @@ const bottoneReset = document.getElementById('reset');
  // valore elementi input
  const nomeCognome = document.getElementById('nome-cognome');
  const km = document.getElementById('km');
- const eta = document.getElementById('eta').value;
+ const eta = document.getElementById('eta');
 
 //evento del bottone genera
 bottone.addEventListener('click',
@@ -18,10 +18,10 @@ bottone.addEventListener('click',
         let testoSconto = 'Biglietto Standard';
 
         //sconto
-        if(eta === 'minorenne'){
+        if(eta.value === 'minorenne'){
             sconto = 20;
             testoSconto = 'Biglietto Minorenne';
-        }else if(eta === 'over65'){
+        }else if(eta.value === 'over65'){
             sconto = 40;
             testoSconto = 'Biglietto Over 65';
         }
